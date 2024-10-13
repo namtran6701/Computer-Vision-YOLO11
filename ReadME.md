@@ -31,7 +31,7 @@ This project implements an enhanced YOLO (You Only Look Once) object detection s
 
 2. Install the required packages:
    ```
-   pip install opencv-python numpy ultralytics tqdm
+   pip install -r requirements.txt
    ```
 
 3. Download the YOLO model weights (if not already present in the project directory).
@@ -56,17 +56,22 @@ python main.py [options]
 
 ### Examples
 
-1. Process video files in the "input" directory using the nano model:
+1. Simply use webcam with nano model 
+   ```
+   python main.py -w
+   ```
+
+2. Process video files in the "input" directory using the nano model:
    ```
    python main.py -m n -i input -o output
    ```
 
-2. Use webcam with medium model and 0.5 confidence threshold:
+3 Use webcam with medium model and 0.5 confidence threshold:
    ```
    python main.py -m m -c 0.5 -w
    ```
 
-3. Detect only specific classes (e.g., persons and cars) in video files:
+4. Detect only specific classes (e.g., persons and cars) in video files:
    ```
    python main.py --classes 0 2 -i input -o output
    ```
