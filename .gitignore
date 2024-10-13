@@ -32,6 +32,7 @@ tmp.zip
 input/
 sammy_venv/
 yolo11n.pt
+yolo11m.pt
 yolov8n.pt
 tmp/
 # PyInstaller
